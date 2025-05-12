@@ -3,8 +3,8 @@ import 'package:supermarket_admin_fe/views/bottom/bottom_bar.dart';
 import 'package:supermarket_admin_fe/views/dashboard/dashboard_main.dart';
 import 'package:supermarket_admin_fe/views/demo/menu.dart';
 import 'package:supermarket_admin_fe/views/demo/orders.dart';
-import 'package:supermarket_admin_fe/views/demo/products.dart';
 import 'package:supermarket_admin_fe/views/demo/promotion.dart';
+import 'package:supermarket_admin_fe/views/product/category.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -18,7 +18,7 @@ class _MainScreenState extends State<MainScreen> {
 
   final List<Widget> _pages = const [
     DashboardMain(),
-    TestingProductPage(),
+    CategoryMain(),
     TestingPromotionPage(),
     TestingOrderPage(),
     TestingMenuPage(),
