@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:supermarket_admin_fe/views/bottom/bottom_bar.dart';
-import 'package:supermarket_admin_fe/views/demo/dashboard.dart';
+import 'package:supermarket_admin_fe/views/dashboard/dashboard_main.dart';
 import 'package:supermarket_admin_fe/views/demo/menu.dart';
 import 'package:supermarket_admin_fe/views/demo/orders.dart';
 import 'package:supermarket_admin_fe/views/demo/products.dart';
@@ -17,7 +17,7 @@ class _MainScreenState extends State<MainScreen> {
   int selectedIndex = 0;
 
   final List<Widget> _pages = const [
-    TestingDashboardPage(),
+    DashboardMain(),
     TestingProductPage(),
     TestingPromotionPage(),
     TestingOrderPage(),

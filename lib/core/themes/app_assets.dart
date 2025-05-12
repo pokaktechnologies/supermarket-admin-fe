@@ -8,4 +8,9 @@ class AppAssets {
   static const String orderIcon = 'assets/images/order_icon.png';
   static const String promotionIcon = 'assets/images/promotion_icon.png';
   static const String menuIcon = 'assets/images/menu_icon.png';
+  static const String dashboardCal = 'assets/images/dashboard_cal.png';
+  static const String dashboardNotification =
+      'assets/images/dashboard_noti.png';
+  static const String dashboardProfPic =
+      'assets/images/dashboard_profile_icon.png';
 }
