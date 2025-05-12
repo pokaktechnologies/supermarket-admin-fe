@@ -1,0 +1,43 @@
+import 'package:flutter/material.dart';
+import 'package:supermarket_admin_fe/views/bottom/bottom_bar.dart';
+import 'package:supermarket_admin_fe/views/demo/dashboard.dart';
+import 'package:supermarket_admin_fe/views/demo/menu.dart';
+import 'package:supermarket_admin_fe/views/demo/orders.dart';
+import 'package:supermarket_admin_fe/views/demo/products.dart';
+import 'package:supermarket_admin_fe/views/demo/promotion.dart';
+
+class MainScreen extends StatefulWidget {
+  const MainScreen({super.key});
+
+  @override
+  State<MainScreen> createState() => _MainScreenState();
+}
+
+class _MainScreenState extends State<MainScreen> {
+  int selectedIndex = 0;
+
+  final List<Widget> _pages = const [
+    TestingDashboardPage(),
+    TestingProductPage(),
+    TestingPromotionPage(),
+    TestingOrderPage(),
+    TestingMenuPage(),
+  ];
+
+  void _onBottomBarTap(int index) {
+    setState(() {
+      selectedIndex = index;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: IndexedStack(index: selectedIndex, children: _pages),
+      bottomNavigationBar: BottomBar(
+        selectedIndex: selectedIndex,
+        onItemSelected: _onBottomBarTap,
+      ),
+    );
+  }
+}
