@@ -4,7 +4,7 @@ import 'package:supermarket_admin_fe/views/dashboard/dashboard_main.dart';
 import 'package:supermarket_admin_fe/views/demo/menu.dart';
 import 'package:supermarket_admin_fe/views/demo/orders.dart';
 import 'package:supermarket_admin_fe/views/demo/promotion.dart';
-import 'package:supermarket_admin_fe/views/product/category.dart';
+import 'package:supermarket_admin_fe/views/product/category/category.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});

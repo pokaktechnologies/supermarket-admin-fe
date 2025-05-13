@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:supermarket_admin_fe/core/themes/app_assets.dart';
 import 'package:supermarket_admin_fe/core/themes/app_colors.dart';
-import 'package:supermarket_admin_fe/views/product/add_category_sheet.dart';
+import 'package:supermarket_admin_fe/core/utils/navigations.dart';
+import 'package:supermarket_admin_fe/views/product/category/add_category_sheet.dart';
 import 'package:supermarket_admin_fe/views/product/product_tile.dart';
+import 'package:supermarket_admin_fe/views/product/subcategory/sub_category.dart';
 
 class CategoryMain extends StatelessWidget {
   const CategoryMain({super.key});
@@ -63,10 +65,10 @@ class CategoryMain extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   SubcategoryPage(selectedTitle: "Groceries& Kitchen"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const SubCategory(selectedTitle: "Groceries& Kitchen"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Groceries& Kitchen",
@@ -76,10 +78,11 @@ class CategoryMain extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   SubcategoryPage(selectedTitle: "Personal Care & Hygiene"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const SubCategory(
+                          selectedTitle: "Personal Care & Hygiene"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Personal Care & Hygiene",
@@ -89,10 +92,10 @@ class CategoryMain extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   SubcategoryPage(selectedTitle: "Baby & Kids"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const SubCategory(selectedTitle: "Baby & Kids"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Baby & Kids",
@@ -102,10 +105,10 @@ class CategoryMain extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   SubcategoryPage(selectedTitle: "Household Essentials"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const SubCategory(selectedTitle: "Household Essentials"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Household Essentials",
@@ -121,10 +124,10 @@ class CategoryMain extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   SubcategoryPage(selectedTitle: "Groceries& Kitchen"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const SubCategory(selectedTitle: "Pet Care"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Pet Care",
@@ -134,10 +137,10 @@ class CategoryMain extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   SubcategoryPage(selectedTitle: "Personal Care & Hygiene"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const SubCategory(selectedTitle: "Healt & Wellness"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Healt & Wellness",
@@ -147,10 +150,10 @@ class CategoryMain extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   SubcategoryPage(selectedTitle: "Baby & Kids"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const SubCategory(selectedTitle: "Home & Living"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Home & Living",
@@ -160,10 +163,11 @@ class CategoryMain extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   SubcategoryPage(selectedTitle: "Household Essentials"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const SubCategory(
+                          selectedTitle: "Electronics & Accessories"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Electronics & Accessories",
@@ -178,10 +182,10 @@ class CategoryMain extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   SubcategoryPage(selectedTitle: "Seasonal & Holiday"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const SubCategory(selectedTitle: "Seasonal & Holiday"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Seasonal & Holiday",
@@ -192,10 +196,10 @@ class CategoryMain extends StatelessWidget {
                 SizedBox(width: width * 0.02),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   SubcategoryPage(selectedTitle: "Office & School"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const SubCategory(selectedTitle: "Office & School"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Office & School",

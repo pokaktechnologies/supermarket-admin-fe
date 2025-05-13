@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:supermarket_admin_fe/core/themes/app_colors.dart';
+import 'package:supermarket_admin_fe/core/utils/navigations.dart';
 
 class ConfirmButton extends StatelessWidget {
   final String text;
@@ -12,7 +13,7 @@ class ConfirmButton extends StatelessWidget {
     var width = size.width;
     return InkWell(
       onTap: () {
-        Navigator.of(context).pop();
+        popNavigation(context);
       },
       child: Container(
         height: height * 0.065,

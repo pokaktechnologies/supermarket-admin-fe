@@ -1,6 +1,8 @@
 class AppAssets {
+  // Common
   static const String logo = 'assets/common/logo.png';
   static const String authImg1 = 'assets/common/auth_img1.png';
+  static const String backArrow = 'assets/common/back_button.png';
 
   // Dashboard
   static const String dashboardIcon = 'assets/images/dashboard_icon.png';
@@ -27,4 +29,35 @@ class AppAssets {
   static const String petcareImg = 'assets/category/petcare_img.png';
   static const String seasonalHolidayImg =
       'assets/category/seasonal_holiday.png';
+
+  // Sub Category
+  static const String beverageImg = 'assets/subcategory/beverages.png';
+  static const String breakfastFoodImg =
+      'assets/subcategory/breakfast_foods.png';
+  static const String cleaningSuppliesImg =
+      'assets/subcategory/cleaning_supplies.png';
+  static const String cookwareImg = 'assets/subcategory/cookware.png';
+  static const String cutleryImg = 'assets/subcategory/cutlery.png';
+  static const String dairyAndEggImg = 'assets/subcategory/dairy_and_eggs.png';
+  static const String foodStorageImg = 'assets/subcategory/food_storage.png';
+  static const String freshProduceImg = 'assets/subcategory/fresh_produce.png';
+  static const String forzenFoodImg = 'assets/subcategory/frozen_food.png';
+  static const String kitchenToolsImg = 'assets/subcategory/kitchen_tools.png';
+  static const String meatImg = 'assets/subcategory/meat_and_seafood.png';
+  static const String pantryImg = 'assets/subcategory/pantry_staples.png';
+  static const String smallAppliancesImg =
+      'assets/subcategory/small_appliances.png';
+  static const String snacksAndSweetsImg =
+      'assets/subcategory/snacks_and_sweets.png';
+  static const String specialityItems =
+      'assets/subcategory/speacialty_items.png';
+  static const String tablewareImg = 'assets/subcategory/tableware.png';
+
+  // Brands
+  static const String brandBajajImg = 'assets/subcategory/brand_bajaj.png';
+  static const String brandHawkingsImg =
+      'assets/subcategory/brand_hawkings.png';
+  static const String brandStovekasImg =
+      'assets/subcategory/brand_stovekas.png';
+  static const String brandTTKImg = 'assets/subcategory/brand_ttk.png';
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:supermarket_admin_fe/core/themes/app_colors.dart';
+import 'package:supermarket_admin_fe/core/utils/navigations.dart';
 import 'package:supermarket_admin_fe/widgets/buttons.dart/confirm_button.dart';
 
 void addCategorySheet(BuildContext context) {
@@ -42,7 +43,7 @@ void addCategorySheet(BuildContext context) {
                   IconButton(
                     icon: const Icon(Icons.close),
                     onPressed: () {
-                      Navigator.of(context).pop();
+                      popNavigation(context);
                     },
                   ),
                 ],
