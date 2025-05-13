@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:supermarket_admin_fe/core/themes/app_assets.dart';
 import 'package:supermarket_admin_fe/core/themes/app_colors.dart';
+import 'package:supermarket_admin_fe/views/product/add_category_sheet.dart';
 import 'package:supermarket_admin_fe/views/product/product_tile.dart';
 
 class CategoryMain extends StatelessWidget {
@@ -209,7 +210,7 @@ class CategoryMain extends StatelessWidget {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: FloatingActionButton(
-        onPressed: () => print("haii"),
+        onPressed: () => addCategorySheet(context),
         elevation: 6.0,
         shape: const CircleBorder(),
         backgroundColor: AppColors.brown,

@@ -8,4 +8,5 @@ class AppColors {
   static const softGreenOverlay = Color(0x7827AE60);
   static const bgGrey = Color(0xFFECF0F1);
   static const brown = Color(0xFFF39C12);
+  static const black = Colors.black;
 }
