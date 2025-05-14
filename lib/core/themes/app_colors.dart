@@ -9,4 +9,7 @@ class AppColors {
   static const bgGrey = Color(0xFFECF0F1);
   static const brown = Color(0xFFF39C12);
   static const black = Colors.black;
+  static const red = Colors.red;
+  static const green25Opacity = Color(0x4027AE60);
+  static const lightGreen = Color(0xFF2ECC71);
 }

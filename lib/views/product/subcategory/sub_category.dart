@@ -3,6 +3,7 @@ import 'package:supermarket_admin_fe/core/themes/app_assets.dart';
 import 'package:supermarket_admin_fe/core/themes/app_colors.dart';
 import 'package:supermarket_admin_fe/core/utils/navigations.dart';
 import 'package:supermarket_admin_fe/views/product/product_tile.dart';
+import 'package:supermarket_admin_fe/views/product/subcategory/add_subcategory_sheet.dart';
 import 'package:supermarket_admin_fe/views/product/subcategory/top_brands.dart';
 
 class SubCategory extends StatelessWidget {
@@ -280,6 +281,15 @@ class SubCategory extends StatelessWidget {
             const TopBrands()
           ],
         ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => addSubCategorySheet(context),
+        elevation: 6.0,
+        shape: const CircleBorder(),
+        backgroundColor: AppColors.brown,
+        foregroundColor: AppColors.white,
+        child: const Icon(Icons.add, size: 23),
       ),
     );
   }
