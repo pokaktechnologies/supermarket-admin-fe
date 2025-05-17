@@ -82,4 +82,6 @@ class AppAssets {
   static const String paidIcon = 'assets/order/paid_icon.png';
   static const String unpaidIcon = 'assets/order/unpaid_icon.png';
   static const String orderArrowImg = 'assets/order/order_icon.png';
+  static const String starIcon = 'assets/order/star_icon.png';
+  static const String tickImg = 'assets/order/tick_icon.png';
 }

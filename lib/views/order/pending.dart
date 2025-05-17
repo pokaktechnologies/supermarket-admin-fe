@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:supermarket_admin_fe/core/themes/app_assets.dart';
+import 'package:supermarket_admin_fe/core/utils/navigations.dart';
+import 'package:supermarket_admin_fe/views/order/order_details/order_details.dart';
 import 'package:supermarket_admin_fe/views/order/single_order_card.dart';
+
 
 class PendingPage extends StatelessWidget {
   const PendingPage({super.key});
@@ -13,14 +16,19 @@ class PendingPage extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: height * 0.02),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15),
-            child: SingleOrderCard(
-              isDelivered: false,
-              paymentStatus: "paid",
-              img: AppAssets.paidIcon,
-              name: "John Doe",
-              isCancelled: false,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            child: InkWell(
+              onTap: () {
+                pushNavigation(context, const OrderDetails());
+              },
+              child: const SingleOrderCard(
+                isDelivered: false,
+                paymentStatus: "paid",
+                img: AppAssets.paidIcon,
+                name: "John Doe",
+                isCancelled: false,
+              ),
             ),
           ),
           SizedBox(height: height * 0.02),
