@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:supermarket_admin_fe/core/themes/app_assets.dart';
 import 'package:supermarket_admin_fe/core/themes/app_colors.dart';
 import 'package:supermarket_admin_fe/core/utils/navigations.dart';
+import 'package:supermarket_admin_fe/views/product/product_main/add_product.dart';
 import 'package:supermarket_admin_fe/views/product/product_main/single_product_tile.dart';
 
 class ProductMain extends StatelessWidget {
@@ -43,17 +44,23 @@ class ProductMain extends StatelessWidget {
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Container(
-                      height: height * 0.08,
-                      width: width * 0.16,
-                      decoration: BoxDecoration(
-                        color: AppColors.brown,
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: const Icon(
-                        Icons.add,
-                        color: AppColors.white,
-                        size: 30,
+                    InkWell(
+                      onTap: () {
+                        
+                        pushNavigation(context, AddProductPage());
+                      },
+                      child: Container(
+                        height: height * 0.08,
+                        width: width * 0.16,
+                        decoration: BoxDecoration(
+                          color: AppColors.brown,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: const Icon(
+                          Icons.add,
+                          color: AppColors.white,
+                          size: 30,
+                        ),
                       ),
                     ),
                     SizedBox(width: width * 0.03),

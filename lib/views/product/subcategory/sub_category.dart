@@ -61,11 +61,10 @@ class SubCategory extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(
-                    //       selectedTitle: "Personal Care & Hygiene"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Dairy & Eggs"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Dairy & Eggs",
@@ -75,10 +74,10 @@ class SubCategory extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(selectedTitle: "Baby & Kids"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Meat & Seafood"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Meat & Seafood",
@@ -88,10 +87,10 @@ class SubCategory extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(selectedTitle: "Household Essentials"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Frozen Foods"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Frozen Foods",
@@ -107,10 +106,10 @@ class SubCategory extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(selectedTitle: "Groceries& Kitchen"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Pantry Staples"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Pantry Staples",
@@ -120,11 +119,10 @@ class SubCategory extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(
-                    //       selectedTitle: "Personal Care & Hygiene"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Snacks & Sweets"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Snacks & Sweets",
@@ -134,10 +132,10 @@ class SubCategory extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(selectedTitle: "Baby & Kids"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Beverages"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Beverages",
@@ -147,10 +145,10 @@ class SubCategory extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(selectedTitle: "Household Essentials"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Breakfast Foods"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Breakfast Foods",
@@ -166,10 +164,10 @@ class SubCategory extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(selectedTitle: "Groceries& Kitchen"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Cookware"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Cookware",
@@ -179,11 +177,10 @@ class SubCategory extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(
-                    //       selectedTitle: "Personal Care & Hygiene"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Cutlery"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Cutlery",
@@ -193,10 +190,10 @@ class SubCategory extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(selectedTitle: "Baby & Kids"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Small Appliances"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Small Appliances",
@@ -206,10 +203,10 @@ class SubCategory extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(selectedTitle: "Household Essentials"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Food Storage"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Food Storage",
@@ -225,10 +222,10 @@ class SubCategory extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(selectedTitle: "Groceries& Kitchen"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Tableware"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Tableware",
@@ -238,11 +235,10 @@ class SubCategory extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(
-                    //       selectedTitle: "Personal Care & Hygiene"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Kitchen Tools"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Kitchen Tools",
@@ -252,10 +248,10 @@ class SubCategory extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(selectedTitle: "Baby & Kids"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Cleaning Supplies"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Cleaning Supplies",
@@ -265,10 +261,10 @@ class SubCategory extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(selectedTitle: "Household Essentials"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Specialty Items"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Specialty Items",

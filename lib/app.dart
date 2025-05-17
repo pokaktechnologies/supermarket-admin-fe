@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:supermarket_admin_fe/views/auth/signup.dart';
+import 'package:supermarket_admin_fe/views/product/product_main/add_product.dart';
 
 
 class MyApp extends StatelessWidget {
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const Signup(),
+      // home: const AddProductPage(),
     );
   }
 }

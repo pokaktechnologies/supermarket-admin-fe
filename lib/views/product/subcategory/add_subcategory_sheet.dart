@@ -4,6 +4,7 @@ import 'package:supermarket_admin_fe/core/themes/app_colors.dart';
 import 'package:supermarket_admin_fe/core/utils/navigations.dart';
 import 'package:supermarket_admin_fe/providers/category_providers.dart';
 import 'package:supermarket_admin_fe/widgets/buttons.dart/confirm_button.dart';
+import 'package:supermarket_admin_fe/widgets/buttons.dart/outerline_button.dart';
 
 void addSubCategorySheet(BuildContext context) {
   showModalBottomSheet<void>(
@@ -11,7 +12,7 @@ void addSubCategorySheet(BuildContext context) {
     isScrollControlled: true,
     builder: (BuildContext context) {
       return Container(
-        height: 600,
+        height: 650,
         decoration: const BoxDecoration(
           color: AppColors.white,
           borderRadius: BorderRadius.only(
@@ -200,6 +201,47 @@ void addSubCategorySheet(BuildContext context) {
                 ),
               ),
               const SizedBox(height: 20),
+              const Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  "*Product Name",
+                  style: TextStyle(
+                    color: AppColors.green,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 5),
+              TextField(
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: AppColors.white,
+                  focusColor: AppColors.green,
+                  focusedBorder: OutlineInputBorder(
+                    borderSide:
+                        const BorderSide(color: AppColors.green, width: 2.0),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  border: OutlineInputBorder(
+                    borderSide:
+                        const BorderSide(color: AppColors.green, width: 2.0),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide:
+                        const BorderSide(color: AppColors.green, width: 2.0),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  hintText: 'Product Name',
+                  hintStyle: const TextStyle(color: AppColors.grey),
+                  contentPadding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                ),
+                style: const TextStyle(fontSize: 14),
+              ),
+              const SizedBox(height: 60),
+              const OuterlineButton(text: "Add Products"),
+              const SizedBox(height: 10),
               const ConfirmButton(text: "Publish")
             ],
           ),
@@ -208,4 +250,3 @@ void addSubCategorySheet(BuildContext context) {
     },
   );
 }
-
