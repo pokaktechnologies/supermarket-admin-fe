@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:supermarket_admin_fe/core/themes/app_assets.dart';
 import 'package:supermarket_admin_fe/core/themes/app_colors.dart';
 import 'package:supermarket_admin_fe/core/utils/navigations.dart';
+import 'package:supermarket_admin_fe/views/product/product_main/product_main.dart';
 import 'package:supermarket_admin_fe/views/product/product_tile.dart';
 import 'package:supermarket_admin_fe/views/product/subcategory/add_subcategory_sheet.dart';
 import 'package:supermarket_admin_fe/views/product/subcategory/top_brands.dart';
@@ -47,10 +48,10 @@ class SubCategory extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    // pushNavigation(
-                    //   context,
-                    //   const SubCategory(selectedTitle: "Groceries& Kitchen"),
-                    // );
+                    pushNavigation(
+                      context,
+                      const ProductMain(selectedTitle: "Fresh Produce"),
+                    );
                   },
                   child: const ProductTile(
                     text: "Fresh Produce",

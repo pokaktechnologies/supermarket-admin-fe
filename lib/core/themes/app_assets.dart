@@ -3,6 +3,7 @@ class AppAssets {
   static const String logo = 'assets/common/logo.png';
   static const String authImg1 = 'assets/common/auth_img1.png';
   static const String backArrow = 'assets/common/back_button.png';
+  static const String threeDots = 'assets/common/3_dots.png';
 
   // Dashboard
   static const String dashboardIcon = 'assets/images/dashboard_icon.png';
@@ -60,4 +61,15 @@ class AppAssets {
   static const String brandStovekasImg =
       'assets/subcategory/brand_stovekas.png';
   static const String brandTTKImg = 'assets/subcategory/brand_ttk.png';
+
+  // Products
+  static const String vegetablesImg = 'assets/product/vegetables_img.png';
+  static const String fruitsImg = 'assets/product/fruits.png';
+  static const String herbsImg = 'assets/product/herbs.png';
+  static const String beetroot = 'assets/product/beetroot.png';
+  static const String broccoli = 'assets/product/broccoli.png';
+  static const String cauliflower = 'assets/product/cauliflower.png';
+  static const String eggplant = 'assets/product/eggplant_img.png';
+  static const String potato = 'assets/product/potato.png';
+  static const String tomato = 'assets/product/tomato.png';
 }
