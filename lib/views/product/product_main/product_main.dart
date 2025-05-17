@@ -46,8 +46,7 @@ class ProductMain extends StatelessWidget {
                   children: [
                     InkWell(
                       onTap: () {
-                        
-                        pushNavigation(context, AddProductPage());
+                        pushNavigation(context, const AddProductPage());
                       },
                       child: Container(
                         height: height * 0.08,

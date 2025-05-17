@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:supermarket_admin_fe/views/bottom/bottom_bar.dart';
 import 'package:supermarket_admin_fe/views/dashboard/dashboard_main.dart';
 import 'package:supermarket_admin_fe/views/demo/menu.dart';
-import 'package:supermarket_admin_fe/views/demo/orders.dart';
 import 'package:supermarket_admin_fe/views/demo/promotion.dart';
+import 'package:supermarket_admin_fe/views/order/order_main_page.dart';
 import 'package:supermarket_admin_fe/views/product/category/category.dart';
 
 class MainScreen extends StatefulWidget {
@@ -20,7 +20,7 @@ class _MainScreenState extends State<MainScreen> {
     DashboardMain(),
     CategoryMain(),
     TestingPromotionPage(),
-    TestingOrderPage(),
+    OrderMainPage(),
     TestingMenuPage(),
   ];
 
