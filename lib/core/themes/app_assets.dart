@@ -84,4 +84,15 @@ class AppAssets {
   static const String orderArrowImg = 'assets/order/order_icon.png';
   static const String starIcon = 'assets/order/star_icon.png';
   static const String tickImg = 'assets/order/tick_icon.png';
+
+  // // Orders
+  // static const String cancelled = 'assets/order/cancelled.png';
+  // static const String delivered = 'assets/order/delivered.png';
+  // static const String pending = 'assets/order/pending.png';
+  // static const String processing = 'assets/order/processing.png';
+  // static const String paidIcon = 'assets/order/paid_icon.png';
+  // static const String unpaidIcon = 'assets/order/unpaid_icon.png';
+  // static const String orderArrowImg = 'assets/order/order_icon.png';
+  // static const String starIcon = 'assets/order/star_icon.png';
+  // static const String tickImg = 'assets/order/tick_icon.png';
 }
