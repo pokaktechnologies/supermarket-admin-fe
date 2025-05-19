@@ -12,4 +12,5 @@ class AppColors {
   static const red = Colors.red;
   static const green25Opacity = Color(0x4027AE60);
   static const lightGreen = Color(0xFF2ECC71);
+  static const lightGreen9 = Color(0x1727AE60);
 }

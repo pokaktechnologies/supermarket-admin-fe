@@ -38,7 +38,11 @@ class OrderDetails extends StatelessWidget {
             children: [
               personalDetailsTile(height, width),
               SizedBox(height: height * 0.014),
+              orderSummary(height, width),
+              SizedBox(height: height * 0.014),
               paymentInformation(height, width),
+              SizedBox(height: height * 0.014),
+              deliveryInformation(height, width),
               SizedBox(height: height * 0.014),
               const OrderHistoryTimeline()
             ],
@@ -48,5 +52,3 @@ class OrderDetails extends StatelessWidget {
     );
   }
 }
-
-
