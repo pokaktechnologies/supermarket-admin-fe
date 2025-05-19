@@ -98,4 +98,6 @@ class AppAssets {
   static const String operations = 'assets/menu/operations.png';
   static const String settings = 'assets/menu/settings.png';
   static const String toggleImg = 'assets/menu/toggle_img.png';
+  static const String totalCustomer = 'assets/menu/total_customer_img.png';
+  static const String helpIcon = 'assets/menu/help.png';
 }

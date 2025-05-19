@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:supermarket_admin_fe/core/themes/app_assets.dart';
 import 'package:supermarket_admin_fe/core/themes/app_colors.dart';
 import 'package:supermarket_admin_fe/core/utils/navigations.dart';
+import 'package:supermarket_admin_fe/views/menu/customer_management/customer_management.dart';
 import 'package:supermarket_admin_fe/views/menu/operations.dart';
 
 class MenuMain extends StatelessWidget {
@@ -60,8 +61,13 @@ class MenuMain extends StatelessWidget {
                   height, width, "Operations", AppAssets.operations),
             ),
             SizedBox(height: height * 0.015),
-            singleMenuItems(height, width, "Customer Management",
-                AppAssets.customerManagement),
+            InkWell(
+              onTap: () {
+                pushNavigation(context, const CustomerManagementScreen());
+              },
+              child: singleMenuItems(height, width, "Customer Management",
+                  AppAssets.customerManagement),
+            ),
             SizedBox(height: height * 0.015),
             singleMenuItems(height, width, "Inventory Management",
                 AppAssets.inventoryManagement),
