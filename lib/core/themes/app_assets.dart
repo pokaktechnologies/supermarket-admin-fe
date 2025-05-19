@@ -5,6 +5,8 @@ class AppAssets {
   static const String backArrow = 'assets/common/back_button.png';
   static const String threeDots = 'assets/common/3_dots.png';
   static const String notifIcon = 'assets/common/notif_icon.png';
+  static const String downArrow = 'assets/common/down_arrow.png';
+  static const String upArrow = 'assets/common/up_arrow.png';
 
   // Dashboard
   static const String dashboardIcon = 'assets/images/dashboard_icon.png';
@@ -85,14 +87,15 @@ class AppAssets {
   static const String starIcon = 'assets/order/star_icon.png';
   static const String tickImg = 'assets/order/tick_icon.png';
 
-  // // Orders
-  // static const String cancelled = 'assets/order/cancelled.png';
-  // static const String delivered = 'assets/order/delivered.png';
-  // static const String pending = 'assets/order/pending.png';
-  // static const String processing = 'assets/order/processing.png';
-  // static const String paidIcon = 'assets/order/paid_icon.png';
-  // static const String unpaidIcon = 'assets/order/unpaid_icon.png';
-  // static const String orderArrowImg = 'assets/order/order_icon.png';
-  // static const String starIcon = 'assets/order/star_icon.png';
-  // static const String tickImg = 'assets/order/tick_icon.png';
+  // Menu
+  static const String customerManagement =
+      'assets/menu/customer_management.png';
+  static const String deliveryAgents = 'assets/menu/delivery_agents.png';
+  static const String helpDesk = 'assets/menu/helpdesk.png';
+  static const String inventoryManagement =
+      'assets/menu/inventory_management.png';
+  static const String logout = 'assets/menu/logout.png';
+  static const String operations = 'assets/menu/operations.png';
+  static const String settings = 'assets/menu/settings.png';
+  static const String toggleImg = 'assets/menu/toggle_img.png';
 }
