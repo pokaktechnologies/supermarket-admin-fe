@@ -4,7 +4,6 @@ import 'package:supermarket_admin_fe/core/utils/navigations.dart';
 import 'package:supermarket_admin_fe/views/order/order_details/order_details.dart';
 import 'package:supermarket_admin_fe/views/order/single_order_card.dart';
 
-
 class PendingPage extends StatelessWidget {
   const PendingPage({super.key});
 
@@ -32,36 +31,51 @@ class PendingPage extends StatelessWidget {
             ),
           ),
           SizedBox(height: height * 0.02),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15),
-            child: SingleOrderCard(
-              isDelivered: false,
-              paymentStatus: "paid",
-              img: AppAssets.paidIcon,
-              name: "Alan",
-              isCancelled: false,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            child: InkWell(
+              onTap: () {
+                pushNavigation(context, const OrderDetails());
+              },
+              child: const SingleOrderCard(
+                isDelivered: false,
+                paymentStatus: "paid",
+                img: AppAssets.paidIcon,
+                name: "Alan",
+                isCancelled: false,
+              ),
             ),
           ),
           SizedBox(height: height * 0.02),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15),
-            child: SingleOrderCard(
-              isDelivered: false,
-              paymentStatus: "Unpaid",
-              img: AppAssets.unpaidIcon,
-              name: "Afiya Afa",
-              isCancelled: false,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            child: InkWell(
+              onTap: () {
+                pushNavigation(context, const OrderDetails());
+              },
+              child: const SingleOrderCard(
+                isDelivered: false,
+                paymentStatus: "Unpaid",
+                img: AppAssets.unpaidIcon,
+                name: "Afiya Afa",
+                isCancelled: false,
+              ),
             ),
           ),
           SizedBox(height: height * 0.02),
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15),
-            child: SingleOrderCard(
-              isDelivered: false,
-              paymentStatus: "paid",
-              img: AppAssets.paidIcon,
-              name: "Amal Amn",
-              isCancelled: false,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            child: InkWell(
+              onTap: () {
+                pushNavigation(context, const OrderDetails());
+              },
+              child: const SingleOrderCard(
+                isDelivered: false,
+                paymentStatus: "paid",
+                img: AppAssets.paidIcon,
+                name: "Amal Amn",
+                isCancelled: false,
+              ),
             ),
           ),
         ],

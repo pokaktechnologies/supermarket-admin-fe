@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:supermarket_admin_fe/core/themes/app_assets.dart';
 import 'package:supermarket_admin_fe/core/themes/app_colors.dart';
+import 'package:supermarket_admin_fe/core/utils/navigations.dart';
+import 'package:supermarket_admin_fe/views/delivery_partner/delivery_partner.dart';
 
-Widget personalDetailsTile(height, width) {
+Widget personalDetailsTile(height, width, BuildContext context) {
   return Container(
     width: width * width,
     height: height * 0.12,
@@ -71,19 +73,24 @@ Widget personalDetailsTile(height, width) {
                 ),
               ),
               SizedBox(height: height * 0.005),
-              Container(
-                height: height * 0.04,
-                width: width * 0.23,
-                decoration: BoxDecoration(
-                  color: AppColors.brown,
-                  borderRadius: BorderRadius.circular(7),
-                ),
-                child: const Center(
-                  child: Text(
-                    "Assign",
-                    style: TextStyle(
-                      color: AppColors.white,
-                      fontWeight: FontWeight.w500,
+              InkWell(
+                onTap: () {
+                  pushNavigation(context, AssignDeliveryPartnerPage());
+                },
+                child: Container(
+                  height: height * 0.04,
+                  width: width * 0.23,
+                  decoration: BoxDecoration(
+                    color: AppColors.brown,
+                    borderRadius: BorderRadius.circular(7),
+                  ),
+                  child: const Center(
+                    child: Text(
+                      "Assign",
+                      style: TextStyle(
+                        color: AppColors.white,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
                   ),
                 ),

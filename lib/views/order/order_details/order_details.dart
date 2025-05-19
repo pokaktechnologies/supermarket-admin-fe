@@ -36,7 +36,7 @@ class OrderDetails extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           child: Column(
             children: [
-              personalDetailsTile(height, width),
+              personalDetailsTile(height, width, context),
               SizedBox(height: height * 0.014),
               orderSummary(height, width),
               SizedBox(height: height * 0.014),
