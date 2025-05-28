@@ -100,4 +100,16 @@ class AppAssets {
   static const String toggleImg = 'assets/menu/toggle_img.png';
   static const String totalCustomer = 'assets/menu/total_customer_img.png';
   static const String helpIcon = 'assets/menu/help.png';
+
+  // Images
+  static const String saleOfferImg = 'assets/images/sale_50.png';
+  static const String threeDotGreen = 'assets/images/3_dot_green.png';
+  static const String graphImgOne = 'assets/images/graph_img_1.png';
+  static const String tickImg2 = 'assets/images/dash_tick.png';
+  static const String graphImgTwo = 'assets/images/graph_img_2.png';
+
+  static const String sampleImgOne = 'assets/images/sample_img_one.jpeg';
+  static const String sampleImgTwo = 'assets/images/sample_img_two.jpeg';
+  static const String sampleImgThree = 'assets/images/sample_img_three.jpeg';
+  static const String dashProfPic = 'assets/images/delivery_agent_profile.png';
 }
