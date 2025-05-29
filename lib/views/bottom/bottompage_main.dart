@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:supermarket_admin_fe/core/themes/app_colors.dart';
 import 'package:supermarket_admin_fe/views/bottom/bottom_bar.dart';
 import 'package:supermarket_admin_fe/views/dashboard/dashboard_main.dart';
 import 'package:supermarket_admin_fe/views/menu/menu_main.dart';
@@ -34,9 +35,12 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: IndexedStack(index: selectedIndex, children: _pages),
-      bottomNavigationBar: BottomBar(
-        selectedIndex: selectedIndex,
-        onItemSelected: _onBottomBarTap,
+      bottomNavigationBar: Container(
+        color: AppColors.bgGrey,
+        child: BottomBar(
+          selectedIndex: selectedIndex,
+          onItemSelected: _onBottomBarTap,
+        ),
       ),
     );
   }

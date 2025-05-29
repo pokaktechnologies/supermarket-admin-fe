@@ -7,6 +7,7 @@ class AppAssets {
   static const String notifIcon = 'assets/common/notif_icon.png';
   static const String downArrow = 'assets/common/down_arrow.png';
   static const String upArrow = 'assets/common/up_arrow.png';
+  static const String pokakLogo = 'assets/common/pokak_logo_01.png';
 
   // Dashboard
   static const String dashboardIcon = 'assets/images/dashboard_icon.png';

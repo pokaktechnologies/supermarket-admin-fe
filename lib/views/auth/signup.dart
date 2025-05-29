@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:supermarket_admin_fe/core/themes/app_assets.dart';
 import 'package:supermarket_admin_fe/core/themes/app_colors.dart';
 import 'package:supermarket_admin_fe/core/utils/navigations.dart';
@@ -24,8 +25,11 @@ class _SignupState extends State<Signup> {
           children: [
             // Logo and Header
             Padding(
-              padding: const EdgeInsets.only(top: 50, left: 270),
-              child: Image.asset(AppAssets.logo),
+              padding: const EdgeInsets.only(top: 50, left: 250),
+              child: Image.asset(
+                AppAssets.pokakLogo,
+                width: 120,
+              ),
             ),
             const Padding(
               padding: EdgeInsets.only(left: 20, top: 15),
@@ -62,10 +66,15 @@ class _SignupState extends State<Signup> {
               height: 300,
               width: double.infinity,
               padding: const EdgeInsets.all(20),
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: AppColors.white,
-                borderRadius: BorderRadius.circular(30),
-                border: Border.all(color: AppColors.primaryColor),
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(30),
+                  topRight: Radius.circular(30),
+                ),
+                border: Border(
+                  top: BorderSide(color: AppColors.primaryColor),
+                ),
               ),
               child: Column(
                 children: [
@@ -95,10 +104,13 @@ class _SignupState extends State<Signup> {
                         horizontal: 20,
                       ),
                     ),
-                    keyboardType: TextInputType.phone,
                   ),
                   const SizedBox(height: 15),
                   TextField(
+                    keyboardType: TextInputType.number,
+                    inputFormatters: <TextInputFormatter>[
+                      FilteringTextInputFormatter.digitsOnly,
+                    ],
                     decoration: InputDecoration(
                       hintText: "Enter your number",
                       border: OutlineInputBorder(
@@ -124,7 +136,6 @@ class _SignupState extends State<Signup> {
                         horizontal: 20,
                       ),
                     ),
-                    keyboardType: TextInputType.phone,
                   ),
                   const SizedBox(height: 20),
                   CustomButton(
